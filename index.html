@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+    <title>Sample Quiz</title>
+</head>
+<body>
+    <div class="navbar">
+        <div id="navbar__header">
+            <img src="./images/quizony_logo_black.png" id="navbar__icon">
+            <div class="navbar__centerOptions">
+                <div class="dropdown">
+                    Categories
+                <div class="dropdown-content">
+                    <a href="#">Quizzes</a>
+                    <a href="#">All</a>
+                    <a href="#">Top</a>
+                    <a href="#">Users Quizzes</a>
+                    <a href="#">Women</a>
+                    <a href="#">Couples</a>
+                    <a href="#">Trivia</a>
+                    <a href="#">Sport</a>
+
+                </div>
+                </div>
+                <a href="" class=""></a>
+                <div class="dropdown">
+                    Create
+                <div class="dropdown-content">
+                    <a href="#">Create Quiz</a>
+                    <a href="#">Create Story</a>
+                    <a href="#">How it works</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                </div>
+                </div>
+
+                <a href="#" class="">Waiting Room</a>
+                <a href="#" class="">Our Story</a>
+                <a href="#" class="" style="color: gray;" id="search_icon"><img src="images\search-13-24.ico"/></a>
+            </div>
+
+            <div class="navbar__leftOptions">
+                <!-- Trigger/Open The Modal -->
+                    <a href="#" id="signUp">Sign Up</a>
+                    <!-- The Modal -->
+                    <div id="signUp__modal" class="modal">
+
+                    <!-- Modal content -->s
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <center>
+                            <img src="images\logo_signup.png">
+                            <p id="modal__title">Welcome to Quizony</p>
+                            <input type="text" id="username" placeholder="Username" required>
+                            <input type="password" id="password"  placeholder="Password" required>
+                            <input type="email" id="email"  placeholder="Email" required>
+                            <button id="signUpBtn">Sign Up</button>
+                            <centre><p style="margin-top: 5px; margin-bottom:5px;">OR</p></centre>
+                            <button class="googleSignInBtn"><img src="images\g-logo.png">Log In</button>
+                            <br><small>By continuing, you agree to Quizony's<a href="#" > Privacy Policy</a> and <a href="#">Cookie use.</a></small>
+                            <p style="margin-top: 10px;">Already a member?<a href="#"> Log In</a></p>
+                        </center>
+                    </div>
+
+                    </div>
+        
+                <a href="#" id="login">Log in</a>
+                <!-- The Modal -->
+                <div id="login__modal" class="modal">
+
+                    <!-- Modal content -->s
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <center>
+                            <img src="images\logo_signup.png">
+                            <p id="modal__title">Welcome to Quizony</p>
+                            <input type="text" id="username" placeholder="Username or email" required>
+                            <input type="password" id="password"  placeholder="Password" required>
+                            <p style="font-weight: bold; font-size:12px; color: black;">Forgot your password?</p>
+                            <br>
+                            <button id="loginBtn">Log in</button>
+                            <centre><p style="margin-top: 5px; margin-bottom:5px;">OR</p></centre>
+                            <button class="googleSignInBtn"><img src="images\g-logo.png">Sign In</button>
+                            <br>
+                            <small>By continuing, you agree to Quizony's<a href="#" > Privacy Policy</a> and <a href="#">Cookie use.</a></small>
+                            <br>
+                            <p style="margin-top: 10px;">Not on Quizony yet?<a href="#"> Sign up</a></p>
+                        </center>
+                    </div>
+
+                    </div>
+
+            </div>
+        </div>
+ 
+    </div>
+
+    <div class="main__container">
+            <p class="quiz_title">Quizzes for friends</p>
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides"> 
+                            <!-- <div class="time_sign">1 month ago</div> -->
+                            <img class="quiz_slides_img" src="images\friends.jpg">
+                            <div class="quiz_slides_text">Best This-Or-That Quiz!</div>
+                        </div>
+                          
+                    </div>
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">Which Would You Choose?</div>
+                        </div>
+                          
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides ">
+                            <img class="quiz_slides_img" src="images\friends.jpg">
+                            <div class="quiz_slides_text">Do your friends really know you?</div>
+                        </div>
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">Friends Quiz - Test your bond!</div>
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <img class="quiz_slides_img" src="images\friends.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div> 
+                    </div>
+                    
+                                
+                </div>
+                            <button class="btn btn-primary leftLst">&#10094;</button>
+                            <button class="btn btn-primary rightLst">&#10095;</button>
+                </div>
+
+            
+            <br>
+            <br>
+
+
+            <p class="quiz_title">Best Quizzes</p>
+
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <!-- <div class="time_sign">1 month ago</div> -->
+                            <img class="quiz_slides_img" src="images\quiz2.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz2.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz2.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+                    <div class="quiz_card_wrapper">
+                            <center style="color: #168cd1; margin-top: 50%; ">Find More &#10095;&#10095;</center>
+                    </div>
+                    
+                                
+                </div>
+                            <button class="btn btn-primary leftLst">&#10094;</button>
+                            <button class="btn btn-primary rightLst">&#10095;</button>
+                </div>
+
+        <p class="quiz_title">Latest Quizzes</p>
+
+        <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <!-- <div class="time_sign">1 month ago</div> -->
+                        <img class="quiz_slides_img" src="images\dogs.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <img class="quiz_slides_img" src="images\quiz2.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <img class="quiz_slides_img" src="images\dogs.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <img class="quiz_slides_img" src="images\quiz2.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+
+                <div class="quiz_card_wrapper">
+                    <div class="quiz_slides">
+                        <div class="quiz_sign">Quiz</div>
+                        <img class="quiz_slides_img" src="images\dogs.jpg">
+                        <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                    </div>
+                    <div class="quiz_slides_infobar">
+                        <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                        <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                        <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                        <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+
+                    </div>   
+                </div>
+                <div class="quiz_card_wrapper">
+                        <center style="color: #168cd1; margin-top: 50%; ">Find More &#10095;&#10095;</center>
+                </div>
+                
+                            
+            </div>
+                        <button class="btn btn-primary leftLst">&#10094;</button>
+                        <button class="btn btn-primary rightLst">&#10095;</button>
+            </div>
+
+            
+            <br>
+            <p class="quiz_title">Trivia Quizzes</p>
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <!-- <div class="time_sign">1 month ago</div> -->
+                            <img class="quiz_slides_img" src="images\trivia.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz2.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\trivia.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz2.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\quiz_image.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+    
+                    <div class="quiz_card_wrapper">
+                        <div class="quiz_slides">
+                            <div class="quiz_sign">Quiz</div>
+                            <img class="quiz_slides_img" src="images\trivia.jpg">
+                            <div class="quiz_slides_text">The Fastest way to learn any language</div>
+                        </div>
+                        <div class="quiz_slides_infobar">
+                            <img src="https://img.icons8.com/material-outlined/15/000000/list.png"/>30
+                            <img src="https://img.icons8.com/ios/15/000000/visible--v1.png"/>500
+                            <img src="https://img.icons8.com/material-outlined/15/000000/thumb-up.png"/>100
+                            <img src="https://img.icons8.com/ios-glyphs/15/000000/user--v1.png"/>sru
+    
+                        </div>   
+                    </div>
+                    <div class="quiz_card_wrapper">
+                            <center style="color: #168cd1; margin-top: 50%; ">Find More &#10095;&#10095;</center>
+                    </div>
+                    
+                                
+                </div>
+                            <button class="btn btn-primary leftLst">&#10094;</button>
+                            <button class="btn btn-primary rightLst">&#10095;</button>
+            </div>
+                    
+            <button class="next_page"> NEXT </button>
+        
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="slideshow.js"></script>
+    
+</body>
+</html>
+

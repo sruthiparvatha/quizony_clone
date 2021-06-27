@@ -1,0 +1,276 @@
+* {
+  top: 0;
+  margin: 0;
+  font-family: Arial;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  z-index: 100;
+}
+
+#navbar__header {
+  position: relative;
+  width: 75%; /* Can be in percentage also. */
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+}
+
+#search_icon {
+  height: 20px;
+  width: 20px;
+}
+#navbar__icon {
+  height: 30px;
+  border: none;
+  /* background-color: black; */
+}
+
+.navbar__centerOptions > a {
+  color: gray;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.navbar__centerOptions > a:hover {
+  color: black;
+}
+.navbar__leftOptions > a {
+  color: gray;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.navbar__leftOptions > a:hover {
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: gray;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.dropdown:hover {
+  color: black;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  top: 22px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Modal for SignUp and Login */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  min-width: 375px;
+  width: 25%; /* Could be more or less, depending on screen size */
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.modal-content img {
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+#modal__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  /* display: inline-block; */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Input Buttons */
+
+input {
+  border: 1px solid lightgray;
+  position: relative;
+  border-radius: 8px;
+  width: 55%;
+  height: 40px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 8px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  transition: 0.5s;
+}
+
+#signUpBtn {
+  /* position: relative; */
+  width: 55%;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #e60021;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+
+.googleSignInBtn {
+  /* position: relative; */
+  width: 55%;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+
+.googleSignInBtn img {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  float: left;
+  display: inline;
+}
+
+#signUpBtn:hover {
+  outline: none !important;
+  background-color: #9b1b1b;
+}
+
+.googleSignInBtn:hover {
+  outline: none !important;
+  box-shadow: 0 0 8px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+small {
+  font-size: 10px;
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+}
+small > a {
+  font-size: 10px;
+  color: #1cb5e7;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+
+p > a {
+  font-size: 14px;
+  color: #1cb5e7;
+}
+
+.modal-content a:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+#loginBtn {
+  /* position: relative; */
+  width: 55%;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  background-color: #e60021;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+
+#loginBtn:hover {
+  outline: none !important;
+  background-color: #9b1b1b;
+}
