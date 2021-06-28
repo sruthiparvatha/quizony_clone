@@ -109,7 +109,7 @@ nav {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 1000; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -120,8 +120,11 @@ nav {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 2% auto; /* 15% from the top and centered */
   padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 1px solid #888;
   border-radius: 10px;
   min-width: 375px;
@@ -306,7 +309,7 @@ li > a:hover {
   color: black;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 880px) {
   #navbar__header .navbar__centerOptions,
   .navbar__leftOptions {
     display: none;
@@ -331,21 +334,27 @@ li > a:hover {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1000; /* Sit on top */
     left: 0;
     top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
     background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
   }
 
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin-top: 30px; /* 15% from the top and centered */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
-    min-width: 375px;
-    width: 25%; /* Could be more or less, depending on screen size */
+    min-width: 200px;
+    /* Could be more or less, depending on screen size */
     /* display: flex;
       flex-direction: column;
       align-items: center; */
@@ -358,7 +367,7 @@ li > a:hover {
   }
 
   #modal__title {
-    font-size: 24px;
+    font-size: px;
     font-weight: 500;
     color: black;
     padding: 10px;
@@ -371,7 +380,7 @@ li > a:hover {
     color: #aaa;
     /* display: inline-block; */
     float: right;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
   }
 
